@@ -17,9 +17,6 @@ jobs:
     - name: Checkout
       uses: actions/checkout@master
 
-    - name: Validate composer.json and composer.lock
-      run: composer validate
-
     - name: Composer
       run: composer install --no-progress --no-suggest
 
